@@ -5,6 +5,7 @@ let g:loaded_cms = 1
 
 if expand('%:p') =~# '/CMSSW_\d\+_\d\+_\d\+\(_\S\+\)\=/src/'
     augroup cmsinc
+        autocmd FileType python set filetype+=.cmssw
         autocmd FileType python setlocal include=
                     \\\(\^\\s*\\(from\\\|import\\)\\s\\+
                     \\\zs\\w\\+\\.\\w\\+\\.\\S\\+\\ze\\\|
