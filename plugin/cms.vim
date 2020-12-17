@@ -1,4 +1,4 @@
-if exists("g:loaded_cms") || &compatible
+if exists('g:loaded_cms') || &compatible
     finish
 endif
 let g:loaded_cms = 1
